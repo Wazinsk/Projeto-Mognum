@@ -1,0 +1,475 @@
+/* Code Dev&Pub by © Wazinsky - 13/02/2020 */
+* {box-sizing: border-box;}
+html {scroll-behavior: smooth;}
+section { padding: 90px 0; }
+
+h1 { font-size: 66px; font-weight: 700; line-height: 80px; }
+h2 { font-size: 48px; margin-bottom: 30px; }
+h3 { font-size: 33px; }
+h5 { margin-bottom: 0px; }
+
+
+.logo-brand {
+    max-width: 180px;
+    min-width: 160px;
+}
+
+
+.content-center {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
+
+.full-width {
+    width: 100%;
+}
+
+
+/* NAVBAR */
+
+.icon-bar {
+    background-color: white !important;
+}
+
+.navbar {
+    background-color: transparent;
+    transition: background 0.4 linear;
+    min-height: 10px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: .8rem;
+    text-shadow: .1rem .1rem 1rem black;
+}
+
+.nav-color {background-color:  rgba(0,0,0,0.7); transition: background 0.4s linear;}
+
+.nav-link { color: #fff; }
+.nav-link:hover { color: rgba(0, 0, 0, 0.9)}
+
+.navbar-toggler { font-size: 50px; }
+.navbar-toggler:focus { outline: none; }
+
+/* HERO */
+
+#hero {
+    animation: changebg 20s infinite; 
+    background-image: url('../img/bg01.jpg'); 
+    background-repeat: no-repeat; 
+    background-size:cover;
+    padding-top: 150px;
+    min-height: 700px;
+    color: white;
+    text-shadow: black;
+}
+
+#hero h1{
+    padding-top: 130px;
+    font-family: 'Lato', sans-serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .9rem black;
+    padding-bottom: .3rem;
+    text-transform: uppercase;
+}
+
+#hero h3{
+    font-family: 'Lato', sans-serif;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .9rem black;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+#hero p {
+    color: white;
+}
+
+.btn {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: rgb(219, 219, 219);
+    text-transform: uppercase;
+    background-color: transparent;
+    text-shadow: .1rem .1rem .9rem black;
+    letter-spacing: .3rem;
+    font-size: 15px;
+    padding: 15px 25px;
+    min-width: 160px;
+    border-radius: 3px;
+    border: 1.9px solid;
+    display: inline-block;
+    border-color: rgba(255, 255, 255,);
+}
+
+/* HOME ANIMATION */
+
+@keyframes changebg { /* definindo animação */
+    25% {background-image: url('../img/bg02.jpg'); }
+    50% {background-image: url('../img/bg03.jpg'); }
+    75% {background-image: url('../img/bg04.jpg'); }
+    100% {background-image: url('../img/bg01.jpg'); }
+}
+
+/* PORTFÓLIO */
+
+#portfolio {
+    background-image: url(../img/texturas/purty_wood.png);
+}
+
+.portfolio-container {
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0;
+    border-radius: 2px;
+}
+
+.portfolio-container img {
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.portfolio-container:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.portfolio-details {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    z-index: 9000;
+}
+
+.portfolio-details h2 {
+    margin-bottom: 0px;
+}
+
+.portfolio-details a h2, .portfolio-details a p {
+    color: white;
+    text-shadow: .1rem .1rem 1rem black;
+}
+
+#Ptext p{
+    font-family: 'Lato', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+#Ptext b{
+    font-family: 'Lato', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+#Pics p{
+    font-family: 'Lato', sans-serif;
+    color: rgb(226, 226, 226);
+    font-weight: 700;
+}
+
+#Btext p{
+    font-family: 'Lato', sans-serif;
+    color: rgb(20, 20, 20);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+#Btext b{
+    font-family: 'Lato', sans-serif;
+    color: rgb(12, 12, 12);
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+/* PRICING */
+
+#pricing {
+    background-image: url(../img/texturas/purty_wood.png);
+    padding: 40px 0;
+}
+
+.btn-primary {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: 4px solid ;
+    border-color: black;
+}
+
+#btnC {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    background-color: transparent;
+    border: 4px solid ;
+    padding: 15px 25px;
+    min-width: 160px;
+    border-radius: 8px;
+    border: 1.9px solid;
+    border-color: rgb(0, 0, 0);
+}
+
+#PRtext p{
+    font-family: 'Lato', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+#PRtext b{
+    font-family: 'Lato', sans-serif;
+    color: rgb(12, 12, 12);
+    font-weight: 800;
+  
+}
+
+
+/* TIME */
+
+#team {
+    background-image: url(../img/texturas/purty_wood.png);
+}
+
+
+.member-container {
+    position: relative;
+    margin: 10px 0;
+}
+
+.member-details {
+    position: absolute;
+    color: var(--white-color);
+    bottom: 0;
+    left: 20px;
+}
+
+.member-details span {
+    font-size: 14px;
+}
+
+.member-details i {
+    padding: 0 5px;
+}
+
+#Ttext p {
+    font-family: 'Lato', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+#Ttext b {
+    font-family: 'Lato', sans-serif;
+    color: rgb(12, 12, 12);
+    font-weight: 800;
+  
+}
+
+#TeamText h5 {
+    font-family: 'Lato', sans-serif;
+    color: rgb(214, 214, 214);
+    font-weight: 800;
+    text-shadow: .1rem .1rem .7rem black;
+}
+
+#TeamText span {
+    font-family: 'Lato', sans-serif;
+    color: rgb(214, 214, 214);
+    font-weight: 800;
+    text-shadow: .1rem .1rem .7rem black;
+}
+
+/* DEPOIMENTOS */
+
+#persons {
+    font-weight: 700;
+    color: rgba(236, 236, 236, 0.911);
+}
+
+#testimonial {
+    background-image: url(../img/fundo2.jpg); background-repeat: no-repeat;
+    background-size: cover; background-attachment: fixed;
+}
+
+
+#carouselExampleIndicators {
+    background-color: rgba(0,0,0,0.6);
+}
+
+.carousel {
+    min-height: 220px;
+    padding: 40px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.carousel-item p {
+    font-size: 26px;
+    font-weight: 400;
+    color:  black;
+}
+
+.carousel-indicators li {
+    background-color:  black;
+    width: 15px;
+    height: 15px;
+    border-radius: 1px;
+    margin: 0 8px;
+}
+
+.carousel-control-next, .carousel-control-prev { 
+    color: rgb(0, 0, 0);
+    opacity: 1;
+    width: 5%;
+}
+
+.control-button {
+    background-color: #0000;
+    opacity: 1;
+    width: 25px;
+    height: 50px;
+    padding: 10px;
+    border: 5px solid;
+    border-color: rgba(182, 182, 182, 0.822);
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+.carousel-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial-user {
+    max-width: 240px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.testimonial-user h6 {
+    margin-bottom: 0px;
+}
+
+.testimonial-user span {
+    font-size: 12px;
+}
+
+.testimonial-user img {
+    border-radius: 50%;
+    max-width: 50px;
+    text-align: center;
+}
+
+.rating i {
+    color: rgba(241, 241, 241, 0.884);
+    font-size: 24px;
+}
+
+#Dtext h2{
+    font-family: 'Lato', sans-serif;
+    color: rgba(255, 255, 255, 0.986);
+    font-weight: 800;
+    text-transform: uppercase;
+    z-index: 1;
+    font-size: 2rem;
+    text-shadow: .1rem .1rem .9rem black;
+  
+}
+
+
+#Dtext p{
+    font-family: 'Lato', sans-serif;
+    color: rgb(236, 236, 236);
+    z-index: 1;
+    font-size: 1.2rem;
+    text-shadow: .1rem .1rem .9rem black;
+}
+
+#Dtext b{
+    font-family: 'Lato', sans-serif;
+    color: rgba(255, 255, 255, 0.986);
+    font-weight: 800;
+    z-index: 1;
+    text-shadow: .1rem .1rem .9rem black;
+  
+}
+
+#Ddtext p{
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: rgba(233, 231, 231, 0.856);
+}
+
+/* CONTATO */
+
+#contact {
+    background-image: url(../img/texturas/purty_wood.png);
+}
+
+.btn-primary {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: 4px solid ;
+    border-color: black;
+}
+
+.btn-primary:hover { 
+    background-color: rgba(0,0,0,0.9); 
+    border: 3px solid; 
+    border-color: black;
+}
+
+#Ctext p{
+    font-family: 'Lato', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+#Ctext b{
+    font-family: 'Lato', sans-serif;
+    color: rgb(12, 12, 12);
+    font-weight: 800;
+  
+}
+
+/* FOOTER */
+
+footer {display: flex; flex-direction: column; background-image: url(../img/texturas/blackorchid.png); padding: 10px 0; align-items: center;}
+footer ul {display: flex; margin-bottom: 10px;}
+footer ul li {margin-right: 10px; align-items: center;}
+footer ul li:last-child {margin-right: 0px;}
+footer ul li a{color:rgb(255, 255, 255); font-size: 1.6rem;}
+footer ul li a:hover {color:rgb(2, 2, 2);}
+footer p {font-size: 14px; font-family: 'Lato', sans-serif; color: rgb(255, 255, 255); text-shadow: .1rem .1rem .9rem black; text-align: center; text-transform: uppercase; font-weight: bold;}
+
+/* @MEDIA */
+
+@media (max-width: 575.98px) { 
+    h1 { font-size: 40px; line-height: normal; }
+    .portfolio-details h2 { font-size: 32px; }
+    .plans { min-width: unset; padding: 40px; }
+    .carousel-item p { font-size: 20px; }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { }
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .portfolio-details h2 { font-size: 30px; }
+    .plans { min-width: unset; padding: 40px 20px;}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) { }
+
+@media (min-width: 1200px) { } /* Code Dev&Pub by © Wazinsky - 13/02/2020 */
