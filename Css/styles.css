@@ -3,11 +3,25 @@
 html {scroll-behavior: smooth;}
 section { padding: 90px 0; }
 
-h1 { font-size: 66px; font-weight: 700; line-height: 80px; }
-h2 { font-size: 48px; margin-bottom: 30px; }
-h3 { font-size: 33px; }
-h5 { margin-bottom: 0px; }
+h1 { 
+    font-size: 66px; 
+    font-weight: 700; 
+    line-height: 80px; 
+}
+h2 { 
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+h3 { 
+    font-size: 33px;
+}
+h5 { 
+    margin-bottom: 0px; 
+}
 
+img {
+    max-width: 100%;
+}
 
 .logo-brand {
     max-width: 180px;
@@ -38,22 +52,36 @@ h5 { margin-bottom: 0px; }
     min-height: 10px;
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
-    font-weight: 800;
-    font-size: .8rem;
-    text-shadow: .1rem .1rem 1rem black;
+    font-weight: 700;
+    font-size: .9rem;
+    text-shadow: .1rem .1rem 1.5rem black;
 }
 
-.nav-color {background-color:  rgba(0,0,0,0.7); transition: background 0.4s linear;}
+.nav-color {
+    background-color:  rgba(0,0,0,0.7);
+    transition: background 0.4s linear;
+}
 
-.nav-link { color: #fff; }
-.nav-link:hover { color: rgba(0, 0, 0, 0.9)}
+.nav-link { 
+    color: #fff; 
+}
 
-.navbar-toggler { font-size: 50px; }
-.navbar-toggler:focus { outline: none; }
+.nav-link:hover {
+     color: rgba(180, 180, 180, 0.9)
+}
+
+.navbar-toggler { 
+    font-size: 50px; 
+}
+
+.navbar-toggler:focus { 
+    outline: none; 
+}
 
 /* HERO */
 
 #hero {
+    max-width: 100%;
     animation: changebg 20s infinite; 
     background-image: url('../img/bg01.jpg'); 
     background-repeat: no-repeat; 
@@ -425,9 +453,9 @@ h5 { margin-bottom: 0px; }
 }
 
 .btn-primary:hover { 
-    background-color: rgba(0,0,0,0.9); 
-    border: 3px solid; 
-    border-color: black;
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
 }
 
 #Ctext p{
@@ -445,13 +473,46 @@ h5 { margin-bottom: 0px; }
 
 /* FOOTER */
 
-footer {display: flex; flex-direction: column; background-image: url(../img/texturas/blackorchid.png); padding: 10px 0; align-items: center;}
-footer ul {display: flex; margin-bottom: 10px;}
-footer ul li {margin-right: 10px; align-items: center;}
-footer ul li:last-child {margin-right: 0px;}
-footer ul li a{color:rgb(255, 255, 255); font-size: 1.6rem;}
-footer ul li a:hover {color:rgb(2, 2, 2);}
-footer p {font-size: 14px; font-family: 'Lato', sans-serif; color: rgb(255, 255, 255); text-shadow: .1rem .1rem .9rem black; text-align: center; text-transform: uppercase; font-weight: bold;}
+footer {
+    
+    display: flex; 
+    flex-direction: column; 
+    background-image: url(../img/texturas/blackorchid.png); 
+    padding: 10px 0; 
+    align-items: center;
+}
+
+footer ul {
+    display: flex; 
+    margin-bottom: 10px;
+}
+
+footer ul li {
+    margin-right: 10px; 
+    align-items: center;
+}
+
+footer ul li:last-child {
+    margin-right: 0px;
+}
+
+footer ul li a {
+    color:rgb(255, 255, 255); 
+    font-size: 1.6rem;
+}
+
+footer ul li a:hover {
+    color:rgba(0, 0, 0, 0.9)
+}
+
+footer p {
+    font-size: 14px; 
+    font-family: 'Lato', sans-serif; 
+    color: rgb(255, 255, 255); 
+    text-shadow: .1rem .1rem .9rem black; 
+    text-align: center; 
+    text-transform: uppercase; 
+    font-weight: bold;}
 
 /* @MEDIA */
 
