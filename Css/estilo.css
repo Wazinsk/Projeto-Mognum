@@ -1,0 +1,3 @@
+* {box-sizing: border-box;}
+html {scroll-behavior: smooth;}
+section { padding: 90px 0; }
